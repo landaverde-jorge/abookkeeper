@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Periods from './Components/Periods'
-
 class App extends Component {
   render() {
     return (
@@ -13,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          <Periods />
+          To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
     );
