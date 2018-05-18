@@ -1,25 +1,17 @@
 import React, {Component} from 'react';
-import {Tabs, Paper} from '@material-ui/core';
-import Tab from '@material-ui/core/Tabs';
-import Typography from '@material-ui/core/Typography';
+import Periods from '../Periods'
 
+export default ({Orders}) => {
+  
+  const ordersCompleted = Orders.reduce((acc, o) => acc + o.completedOrders, 0);
+  const totalOders = Orders.length
 
-class Header extends Component {
-  render() {
-    return (
-      <Paper>
-        <Tabs
-          indicatorColor="primary"
-          textColor="primary"
-          centered
-        >
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
-        </Tabs>
-      </Paper>
-    );
-  }
+  return (
+    <div>
+      <Periods />
+      <div>Orders: {totalOders} Completed Orders: {ordersCompleted}</div>
+      
+      
+    </div>
+  )
 }
-
-export default Header;
