@@ -170,21 +170,21 @@ export default [
     {
         id: '25',
         name: 'Bracelet',
-        date: "2018-05-04T00:00:00.000Z",
+        date: "2018-05-10T00:00:00.000Z",
         orderQty: 11,
         completedOrders: 1
     },
     {
         id: '26',
         name: 'Fitted Cap',
-        date: "2018-05-05T00:00:00.000Z",
+        date: "2018-05-13T00:00:00.000Z",
         orderQty: 9,
         completedOrders: 1
     },
     {
         id: '27',
         itemName: 'Hoodie',
-        date: "2018-05-10T00:00:00.000Z",
+        date: "2018-05-15T00:00:00.000Z",
         orderQty: 33,
         completedOrders: 1
     },
@@ -198,14 +198,14 @@ export default [
     {
         id: '29',
         name: 'Fitted Cap',
-        date: "2018-05-17T00:00:00.000Z",
+        date: "2018-05-19T00:00:00.000Z",
         orderQty: 7,
         completedOrders: 1
     },
     {
         id: '30',
         name: 'Hoodie',
-        date: "2018-05-17T00:00:00.000Z",
+        date: "2018-05-19T00:00:00.000Z",
         orderQty: 17,
         completedOrders: 0
     },
