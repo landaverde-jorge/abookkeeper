@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {PieChart} from 'react-easy-chart';
+
+
 
 class Sales extends Component {
   // getOrdersByDate(){
@@ -20,6 +23,22 @@ class Sales extends Component {
 
     return (
       <div>
+        <PieChart
+          size={250}
+          innerHoleSize={200}
+          data={[
+            { key: 'A', value: 200, color: '#aaac84' },
+            { key: 'B', value: 50, color: '#dce7c5' },
+          ]}
+        />
+        {/* <PieChart
+          size={200}
+          innerHoleSize={150}
+          data={[
+            { key: 'A', value: 200, color: '#aaac84' },
+            { key: 'B', value: 50, color: '#dce7c5' },
+          ]}
+        /> */}
         Sales
       </div>
     );

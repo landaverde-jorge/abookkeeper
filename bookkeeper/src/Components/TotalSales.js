@@ -1,4 +1,7 @@
 import React from 'react';
+import {AreaChart} from 'react-easy-chart';
+
+
 
 export default ({ ordersForToday, Items}) => {
 
@@ -19,8 +22,55 @@ export default ({ ordersForToday, Items}) => {
   }
   
   return (
-    <div>
+    <div style={{display: 'flex-box'}}>
       Total Sales: {price}
+      <AreaChart
+        xType={'text'}
+        xTicks={5}
+        yTicks={7}
+        axes
+        width={350}
+        height={250}
+        areaColors={['red', 'yellow', 'green']}
+        interpolate={'cardinal'}
+        data={[
+          [
+            { x: 1, y: 20 },
+            { x: 2, y: 13 },
+            { x: 3, y: 33 },
+            { x: 4, y: 45 },
+            { x: 5, y: 15 },
+            { x: 6, y: 20 },
+            { x: 7, y: 13 },
+            { x: 8, y: 33 },
+            { x: 9, y: 45 },
+            { x: 10, y: 15 }
+          ], [
+            { x: 1, y: 13 },
+            { x: 2, y: 15 },
+            { x: 3, y: 13 },
+            { x: 4, y: 15 },
+            { x: 5, y: 13 },
+            { x: 6, y: 15 },
+            { x: 7, y: 13 },
+            { x: 8, y: 15 },
+            { x: 9, y: 13 },
+            { x: 10, y: 20 }
+          ], [
+            { x: 1, y: 30 },
+            { x: 2, y: 25 },
+            { x: 3, y: 13 },
+            { x: 4, y: 28 },
+            { x: 5, y: 18 },
+            { x: 6, y: 30 },
+            { x: 7, y: 25 },
+            { x: 8, y: 13 },
+            { x: 9, y: 18 },
+            { x: 10, y: 30 }
+          ]
+          
+        ]}
+      />
     </div>
   );
 };
