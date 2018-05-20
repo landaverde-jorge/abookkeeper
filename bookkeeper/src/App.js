@@ -44,10 +44,16 @@ class App extends Component {
   render() {
 
     return (
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-       <AppBar>
+      <div>
+       <AppBar style={{
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center',
+        backgroundColor: "#FF0000",
+        border:'1px solid'
+        }}>
           <Toolbar>
-            <Typography  align='center' variant="headline" color="inherit" > 
+            <Typography variant="headline" > 
               DASHBOARD
             </Typography>
           </Toolbar>
